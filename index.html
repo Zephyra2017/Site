@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" href="css/stuck.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/touchTouch.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tmStickUp.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/touchTouch.jquery.js"></script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+            $('#stuck_container').tmStickUp({});
+            $('.gallery .gall_item').touchTouch();
+
+        });
+    </script>
+    <!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+</head>
+
+<body class="page1" id="top">
+    <!--=============================
+            MODALS
+            =========================-->
+    <div class="md-modal md-effect-16" id="modal-16">
+        <div class="md-content">
+            <h3 style="color: white;">Greek and Italian Cuisine</h3>
+            <div>
+                <!--
+                <p>This is a modal window. You can do the following things with it:</p>
+                <ul>
+                    <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                    <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                </ul>
+                -->
+
+                <button class="md-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+              header
+=================================-->
+    <header>
+        <!--==============================
+            Stuck menu
+=================================-->
+        <section id="stuck_container">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <h1 id="logox">
+                            <a href="index.html"><img style="width: 90px" src="images/Logox.png" alt=""></a>
+                        </h1>
+                        <h2 id="logotext" style="font-family: Cinzel">
+                            <a id="special" href="index.html">ZephyrA</a>
+                        </h2>
+                        <div class="navigation">
+                            <nav>
+                                <ul class="sf-menu">
+                                    <li class="current"><a href="index.html">home</a></li>
+                                    <li><a href="index-1.html">menu</a></li>
+                                    <!--<li><a href="#">reservation</a></li>-->
+                                    <li><a href="index-3.html">blog</a></li>
+                                    <li><a href="index-4.html">contacts</a></li>
+                                </ul>
+                            </nav>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--=====================
+          Content
+======================-->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="grid_4">
+                    <div class="banner">
+                        <div class="gall_block">
+                            <a class="md-trigger" data-modal="modal-16"><img src="images/bbig6.jpg" alt=""></a>
+                            <div class="bann_capt ">
+                                <div class="maxheight">
+                                    <img src="images/icon1.png" alt="">
+                                    <div class="bann_title">Greek and Italian Cuisine</div>
+                                    <a href="greekmenu.html">more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="banner">
+                        <div class="gall_block">
+                            <div class="bann_capt  bn__1">
+                                <div class="maxheight">
+                                    <img src="images/icon2.png" alt="">
+                                    <div class="bann_title">Thai and Chinese Menu</div>
+                                    <a href="thaimenu.html">more</a>
+                                </div>
+                            </div>
+                            <a class="md-trigger" data-modal="modal-16"><img src="images/rice.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="banner ">
+                        <div class="gall_block">
+                            <a class="md-trigger" data-modal="modal-16"><img src="images/coffee.jpg" alt=""></a>
+                            <div class="bann_capt  bn__2">
+                                <div class="maxheight">
+                                    <img src="images/icon3.png" alt="">
+                                    <div class="bann_title">Drinks, Extras<br> &amp; Deserts</div>
+                                    <a href="drinksmenu.html">more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="grid_4">
+                    <div class="block1">
+                        <div class="count">1.</div>
+                        Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo. Praesent faucibus malesuada faucibus. Donec laeet metus id laoreet malesuadarem ipsum dolor
+                        <br>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="block1">
+                        <div class="count">2.</div>
+                        Dasamus at magna non nunc tristique rhoncus. Kliquam nibh ante, egestas id dictum a, commodo. Praesent faucibus malesuada faucibus. Donec laeet metus id laoreet malesuadarem ipsumer
+                        <br>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="block1">
+                        <div class="count">3.</div>
+                        Tervamus at magna non nunc tristique rhoncus. Oliquam nibh ante, egestas id dictum a, commodo. Iraesent faucibus malesuada faucibus. Donec laeet etus id laoreet malesuadarem ipsolo
+                        <br>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>-->
+                <div class="grid_12">
+                    <div class="box">
+                        <div class="row">
+                            <div class="grid_5 preffix_1">
+                                <h2>Interested?</h2>
+                                If you like what you see and want to find out more or would like book a reservation, feel free to contact us. We also do free delivery in the Uttara area and takeout so that you can enjoy Zephyra in your own comfort.<br>
+                                <a href="#" class="btn">more</a>
+                            </div>
+                            <div class="grid_5">
+                                <h2>Our Passion</h2>
+                                It's always been our dream to open a family restaurant in the heart of Dhaka city. With your help we can make those aspirations a reality. Join us at Zephyra for quality food, comfortable accomodations all at an affordable value. We hope to see you at
+                                our home! <br>
+                                <a href="#" class="btn">more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_12">
+                    <h2>Dishes for You to Try</h2>
+                </div>
+                <div class="gallery">
+                    <div class="grid_4">
+                        <a href="images/big1.jpg" class="gall_item"><img src="images/page1_img4.jpg" alt=""></a><a href="#" class="link1">+</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="grid_4">
+                        <a href="images/big2.jpg" class="gall_item"><img src="images/page1_img5.jpg" alt=""></a><a href="#" class="link1">+</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="grid_4">
+                        <a href="images/big3.jpg" class="gall_item"><img src="images/page1_img6.jpg" alt=""></a><a href="#" class="link1">+</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!--<div class="grid_4">
+                    <h2>Testimonials</h2>
+                    <blockquote class="bq1">
+                        <img src="images/page1_img7.jpg" alt="" class="img_inner fleft noresize">
+                        <div class="extra_wrapper">
+                            <div class="bq_title color1">Mark Wood</div>
+                            'Insert Testimony Here'
+                            <a href="#"><span class="fa fa-chevron-right"></span>more testimonials</a>
+                        </div>
+                    </blockquote>
+                </div>
+                -->
+                <div class="grid_4">
+                    <h2>What's New?</h2>
+                    <div class="block2">
+                        <time datetime="2014-01-01">11<br>June</time>
+                        <div class="extra_wrapper">
+                            <div class="text1"><a href="#">Vivamus at magna non nunc </a></div>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <time datetime="2014-01-01">15<br>APR</time>
+                        <div class="extra_wrapper">
+                            <div class="text1"><a href="#">Tivamus at magna non nunc </a></div>Rehoncus. Aliquam nibh antegestas id dictum a, commodo. Praesenterto faucibus malesuada faucibu
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <h2>Opening Hours</h2>
+                    <ul class="shed">
+                        <!--<li><span>Breakfast:</span> 8AM - 11AM</li>-->
+                        <li><span>Lunch:</span> 1PM - 4PM</li>
+                        <li><span>Dinner:</span> 6PM - 11PM</li>
+                    </ul>
+                </div>
+                <div class="grid_4">
+                    <div class="fb-page" data-href="https://www.facebook.com/zephyra2017" data-tabs="timeline" data-height="300" data-width="270" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/zephyra2017" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/zephyra2017">Zephyra</a></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+              footer
+=================================-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="socials">
+                        <!--<a href="#" class="fa fa-twitter"></a>-->
+                        <a href="#" class="fa fa-facebook"></a>
+                        <!--<a href="#" class="fa fa-google-plus"></a>
+                        <a href="#" class="fa fa-pinterest"></a>-->
+                    </div>
+                    <div class="copyright"><span class="brand">Atif Mahmud </span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
+                        <div>Website designed by <a href="https://github.com/Atif-Mahmud" rel="nofollow">Atif Mahmud</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Dependenciees-->
+    <div class="md-overlay"></div>
+    <!-- the overlay element -->
+
+    <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
+
+    <!-- for the blur effect -->
+    <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+    <script>
+        // this is important for IEs
+        var polyfilter_scriptpath = '/js/';
+    </script>
+    <script src="js/cssParser.js"></script>
+    <script src="js/css-filters-polyfill.js"></script>
+    <!-- For the demo ad -->
+    <script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+</body>
+
+</html>
